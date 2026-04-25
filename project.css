@@ -1,0 +1,104 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, #1a78c2, #56b4e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.container h2 {
+    margin: 0 0 18px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+
+.search-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #1a78c2;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1a78c2;
+    color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #155f9e;
+}
+
+
+#weather {
+    text-align: left;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+#weather .weather-city {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+#weather .weather-temp {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #1a78c2;
+}
+
+#weather .weather-desc {
+    text-transform: capitalize;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#weather .weather-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.error-msg {
+    color: #e74c3c;
+    font-weight: 600;
+    padding: 8px 0;
+}
